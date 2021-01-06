@@ -128,7 +128,7 @@ function string.tohex(str)
   ))
 end
 
-function string.hexifly(str)
+function string.hexlify(str)
   return (str:gsub(
     "..",
     function(cc)
@@ -152,7 +152,7 @@ end
   local hex_p = string.tohex(p)
 
   print(p:tohex())
-  print(p:tohex():hexifly())
+  print(p:tohex():hexlify())
   print(hex_p:fromhex())
   > lua test2.lua
   > 41414141
